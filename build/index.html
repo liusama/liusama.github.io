@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>搭建 | 醉饮寒风</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文记录了如何搭建hexo博客的步骤。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="搭建">
+<meta property="og:url" content="https://liusama.github.io/build/index.html">
+<meta property="og:site_name" content="醉饮寒风">
+<meta property="og:description" content="本文记录了如何搭建hexo博客的步骤。">
+<meta property="og:updated_time" content="2015-11-29T08:18:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="搭建">
+<meta name="twitter:description" content="本文记录了如何搭建hexo博客的步骤。">
+  
+    <link rel="alternative" href="/atom.xml" title="醉饮寒风" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">醉饮寒风</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记我一生所行所思，直视内心</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页 | Home</a>
+        
+          <a class="main-nav-link" href="/archives">归档 | Archives</a>
+        
+          <a class="main-nav-link" href="/about">关于 | About</a>
+        
+          <a class="main-nav-link" href="/build">搭建 | Build</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://liusama.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/build/index.html" class="article-date">
+  <time datetime="2015-11-24T11:47:03.000Z" itemprop="datePublished">2015-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      搭建
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文记录了如何搭建hexo博客的步骤。</p>
+<a id="more"></a>
+<h3 id="1-_hexo简介">1. hexo简介</h3><p>hexo是一个基于Node.js的静态博客程序。通过Hexo可以快速生成一个静态博客框架，仅需要几条命令就可以生成静态网页。</p>
+<h3 id="2-_github创建分支">2. github创建分支</h3><p>在github上创建repo：username.github.io<br>在这里，我的github账户名是liusama，repo为liusama.github.io</p>
+<h3 id="3-_搭建blog">3. 搭建blog</h3><p>安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install node <span class="comment">#安装node.js</span></span><br><span class="line">npm install -g hexo <span class="comment">#安装hexo</span></span><br></pre></td></tr></table></figure></p>
+<p>生成默认静态页面<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">hexo</span> init <span class="keyword">blog </span>#创建hexo博客，存储在<span class="keyword">blog目录下</span><br><span class="line"></span><span class="label">cd</span> <span class="keyword">blog</span><br><span class="line"></span><span class="label">hexo</span> generate ＃生成静态页面</span><br></pre></td></tr></table></figure></p>
+<p>预览页面效果<br> <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span> <span class="preprocessor">#启动本地server</span></span><br></pre></td></tr></table></figure></p>
+<p>在浏览器中打开<a href="http://0.0.0.0:40000，即可看到博客的效果" target="_blank" rel="external">http://0.0.0.0:40000，即可看到博客的效果</a></p>
+<p>编辑全局配置文件<code>_config.yml</code><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># Site&#10;title: &#37257;&#39278;&#23506;&#39118;&#10;subtitle: &#8220;&#21333;&#20992;&#27531;&#36527;&#39278;&#23506;&#39118;&#65292;&#20170;&#26397;&#26377;&#37202;&#37257;&#40644;&#40857;&#8221;&#65292;&#27809;&#38169;&#65292;&#20511;&#29992;&#21704;&#21704;&#40857;&#30340;&#35799;&#21495;&#20102;&#65374;&#10;description:&#10;author: &#37257;&#39278;&#23506;&#39118;&#10;language: &#10;timezone:&#10;&#10;# URL&#10;url: http://liusama.github.io&#10;&#10;deploy:&#10;  type: git&#10;  repo: git@github.com:liusama/liusama.github.io.git&#10;  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>添加新博文<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">"my first chapter"</span></span><br></pre></td></tr></table></figure></p>
+<p>在source/_posts/下生成一个markdown文件，编辑正文</p>
+<p>添加关于页面<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> page <span class="string">"about"</span></span><br></pre></td></tr></table></figure></p>
+<p>生成source/about/index.md文件，编辑正文</p>
+<p>编辑themes/landscape/_config.yml文件,添加about页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Header</span></span><br><span class="line">menu:</span><br><span class="line">  Home: /</span><br><span class="line">  Archives: /archives</span><br><span class="line">  About: /about</span><br></pre></td></tr></table></figure></p>
+<p>发布博客到github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate <span class="comment">#生成静态网页</span></span><br><span class="line">hexo deploy ＃发布到github</span><br></pre></td></tr></table></figure></p>
+<p>到这里，整个blog的创建已经完成</p>
+<h3 id="4-_优化加载速度">4. 优化加载速度</h3><p>hexo中使用了google的前端公共库和免费字体库，由于众所周知的原因，加载速度十分缓慢<br>这里我使用了360CDN服务来加速</p>
+<p>修改前端公共库地址，编辑themes/landscape/layout/_partial/after-footer.ejs文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>替换为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>修改字体库地址，编辑themes/landscape/layout/_partial/head.ejs文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"//fonts.googleapis.com/css?family=Source+Code+Pro"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>替换为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"//fonts.useso.com/css?family=Source+Code+Pro"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="5-_添加404页面">5. 添加404页面</h3><p>在source目录下新建404.html文件即可，这里我使用的是腾讯公益<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>404 | 醉饮寒风<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://www.qq.com/404/search_children.js"</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://liusama.github.io/build/index.html" data-id="cjb7vqfue0001h4fy9c293e9w" class="article-share-link">Share</a>
+      
+        <a href="https://liusama.github.io/build/index.html#uyan_comments" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+<section id="uyan_comments">
+  <!-- UY BEGIN -->
+  <div id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072174"></script>
+  <!-- UY END -->
+</section>
+
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+	<div class="widget-wrap">
+		<h3 class="widget-title">版权协议</h3>
+		<div class="widget">
+			<p align="center"><a target="_ blank" rel="license" href="http://creativecommons.org/licenses/by/2.5/cn/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" /></a></p><p align="center"><a target="_ blank" rel="license" href="http://creativecommons.org/licenses/by/2.5/cn/">知识共享署名 2.5 中国大陆许可协议</a></p>
+		</div>
+	</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/生活杂谈/">生活杂谈</a><span class="category-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/小说/" style="font-size: 10px;">小说</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">文章</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/07/nan-jing-xing-ji/">南京行记</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/28/bu-pa-lv-tu-duo-kan-ke/">不怕旅途多坎坷</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/10/guan-yu-ting-yin-yue-na-dian-shi/">关于听音乐那点事</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/22/na-xie-nian-cai-guo-de-keng/">那些年踩过的坑</a>
+          </li>
+        
+          <li>
+            <a href="/2011/01/23/2011-1-22-bi-ye-zhi-jin-de-zong-jie/">毕业至今的总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Copyright &copy; 2017 醉饮寒风
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页 | Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档 | Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">关于 | About</a>
+  
+    <a href="/build" class="mobile-nav-link">搭建 | Build</a>
+  
+</nav>
+    
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
